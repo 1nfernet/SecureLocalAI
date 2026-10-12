@@ -1,12 +1,12 @@
-# myLocalKb
+﻿# SecureLocalAI
 
-myLocalKb is an offline, local-first personal knowledge base with document upload, local vector search, and an Ollama-powered RAG chat interface.
+SecureLocalAI is an offline, local-first personal knowledge base with document upload, local vector search, and an Ollama-powered RAG chat interface.
 
 Upload documents, index them locally, and ask grounded questions against your own files. The app uses local embeddings, a local ChromaDB vector store, and a local LLM served by Ollama.
 
 No cloud LLM APIs are used. No API keys are required. Uploaded documents, embeddings, and vector indexes stay on your machine.
 
-![myLocalKb web interface](docs/assets/web-ui-screenshot.png)
+![SecureLocalAI web interface](docs/assets/web-ui-screenshot.png)
 
 ---
 
@@ -33,7 +33,7 @@ This repository is public so others can inspect, run, fork, and build on the loc
 
 ## Why This Exists
 
-Many RAG-style knowledge-base tools rely on hosted LLMs, hosted embedding APIs, telemetry, or managed vector databases. myLocalKb is intentionally small and local:
+Many RAG-style knowledge-base tools rely on hosted LLMs, hosted embedding APIs, telemetry, or managed vector databases. SecureLocalAI is intentionally small and local:
 
 - FastAPI backend
 - Vanilla HTML/CSS/JS frontend
@@ -83,8 +83,8 @@ Model downloads are handled by Ollama during setup. Model weights are not stored
 ### Clone
 
 ```bash
-git clone https://github.com/apg6390/myLocalKb.git
-cd myLocalKb
+git clone https://github.com/sujal-067/SecureLocalAI.git
+cd SecureLocalAI
 ```
 
 ### Setup
@@ -274,7 +274,7 @@ Keep changes aligned with the local-only constraint: no runtime cloud APIs, no t
 ## Project Structure
 
 ```text
-myLocalKb/
+SecureLocalAI/
 |-- backend/        Python FastAPI backend
 |-- frontend/       HTML/CSS/JS web interface
 |-- data/           Runtime documents and vector DB, gitignored
@@ -316,3 +316,11 @@ myLocalKb/
 - [Architecture](docs/architecture.md)
 - [LLM choice ADR](docs/adr/001-llm-choice.md)
 - [Third-party licenses](THIRD_PARTY_LICENSES.md)
+---
+
+## Project Origin and Attribution
+
+SecureLocalAI is a customized adaptation of [myLocalKb](https://github.com/apg6390/myLocalKb), an open-source local-first document retrieval and RAG project.
+
+See [LICENSE](LICENSE) and [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) for licensing and attribution details.
+
